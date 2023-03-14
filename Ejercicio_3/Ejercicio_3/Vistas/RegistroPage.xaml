@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Ejercicio_3.Vistas.RegistroPage">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#606C38">
+            <Frame BackgroundColor="#FEFAE0" CornerRadius="10" Margin="10">
+                <Image Source="https://web.ucenm.net/wp-content/uploads/2019/09/Logo-UCENM-Estilizado.png" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Scale="1" Aspect="AspectFit"/>
+            </Frame>
+            <Frame BackgroundColor="#FEFAE0" Margin="10" CornerRadius="10">
+                <StackLayout>
+                    <Label Text="Ingresa la siguiente informacion:" HorizontalOptions="Start" FontSize="25" TextColor="Black" FontAttributes="Bold"/>
+                    <Label Text="Nombre:" HorizontalOptions="Start" FontSize="20" TextColor="Black" FontAttributes="Bold"/>
+                    <Entry x:Name="Nombre" Placeholder=" " Keyboard="Text"  FontSize="20" PlaceholderColor="Black" BackgroundColor="#DDA15E"/>
+                    <Label Text="Apellido:" HorizontalOptions="Start" FontSize="20" TextColor="Black" FontAttributes="Bold" />
+                    <Entry x:Name="Apellido" Placeholder=" " Keyboard="Text"  FontSize="20" PlaceholderColor="Black" BackgroundColor="#DDA15E"/>
+                    <Label Text="Edad:" HorizontalOptions="Start" FontSize="20" TextColor="Black" FontAttributes="Bold" />
+                    <Entry x:Name="Edad" Placeholder=" " Keyboard="Text"  FontSize="20" PlaceholderColor="Black" BackgroundColor="#DDA15E"/>
+                    <Label Text="Correo Electronico:" HorizontalOptions="Start" FontSize="20" TextColor="Black" FontAttributes="Bold" />
+                    <Entry x:Name="Correo" Placeholder=" " Keyboard="Text"  FontSize="20" PlaceholderColor="Black" BackgroundColor="#DDA15E"/>
+                    <Label Text="Direccion:" HorizontalOptions="Start" FontSize="20" TextColor="Black" FontAttributes="Bold" />
+                    <Entry x:Name="Direccion" Placeholder=" " Keyboard="Text"  FontSize="20" PlaceholderColor="Black" BackgroundColor="#DDA15E"/>
+                </StackLayout>
+            </Frame>
+            <Frame BackgroundColor="#FEFAE0" Padding="10" Margin="10" CornerRadius="10">
+                <StackLayout>
+                    <StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand">
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                            <Button Text="Enviar Informacion"  FontSize="20" HeightRequest="70" CornerRadius="10" WidthRequest="180" />
+                            <Button Text="Ver Base de Datos" Clicked="Ver" FontSize="20" HeightRequest="70" CornerRadius="10" WidthRequest="180" />
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                            <Button Text="Limpiar" Clicked="Limpiar" FontSize="20" HeightRequest="70" CornerRadius="10" WidthRequest="180" />
+                        </StackLayout>
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
